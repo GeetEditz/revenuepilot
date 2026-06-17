@@ -5,6 +5,13 @@ RevenuePilot AI is an enterprise-grade ecommerce revenue forecasting and budget 
 
 ---
 
+## 🌐 Live Deployments
+
+* **Frontend Dashboard (Vercel)**: [https://revenuepilot.vercel.app](https://revenuepilot.vercel.app) *(Configure/update this link with your Vercel URL)*
+* **Backend API Gateway (Render)**: [https://revenuepilot-o2p3.onrender.com](https://revenuepilot-o2p3.onrender.com)
+
+---
+
 ## 🚀 Key Features
 
 * **Probabilistic Forecasting Engine**: Powered by LightGBM Quantile Regression models to output P10 (pessimistic), P50 (expected median), and P90 (optimistic) confidence ranges over 30, 60, and 90-day horizons.
