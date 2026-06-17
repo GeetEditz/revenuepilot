@@ -5,7 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
+import rpBlack from "@/app/RP_BLACK.png";
+import rpWhite from "@/app/RP_WHITE.png";
 import {
   LayoutDashboard,
   TrendingUp,
@@ -89,9 +92,20 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
         >
           {/* Sidebar Header */}
           <div className="h-16 flex items-center justify-between px-4 border-b border-border">
-            <Link href="/" className="flex items-center gap-3 overflow-hidden select-none">
-              <div className="h-9 w-9 rounded-lg bg-primary flex items-center justify-center text-primary-foreground shadow-sm shrink-0">
-                <span className="font-extrabold text-lg tracking-wider">R</span>
+            <Link href="/" className="flex items-center gap-3 overflow-hidden select-none w-full">
+              <div className="h-9 w-9 rounded-lg flex items-center justify-center shadow-sm shrink-0 overflow-hidden relative">
+                <Image
+                  src={rpBlack}
+                  alt="RevenuePilot AI Logo"
+                  className="h-full w-full object-contain dark:hidden block"
+                  priority
+                />
+                <Image
+                  src={rpWhite}
+                  alt="RevenuePilot AI Logo"
+                  className="h-full w-full object-contain dark:block hidden"
+                  priority
+                />
               </div>
               {!isCollapsed && (
                 <span className="font-semibold text-base tracking-tight whitespace-nowrap animate-fade-in">
@@ -172,8 +186,19 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
               >
                 <div className="flex items-center justify-between pb-4 border-b border-border mb-6">
                   <div className="flex items-center gap-2">
-                    <div className="h-8 w-8 rounded bg-primary flex items-center justify-center text-primary-foreground font-bold">
-                      R
+                    <div className="h-8 w-8 rounded flex items-center justify-center shrink-0 overflow-hidden relative">
+                      <Image
+                        src={rpBlack}
+                        alt="RevenuePilot AI Logo"
+                        className="h-full w-full object-contain dark:hidden block"
+                        priority
+                      />
+                      <Image
+                        src={rpWhite}
+                        alt="RevenuePilot AI Logo"
+                        className="h-full w-full object-contain dark:block hidden"
+                        priority
+                      />
                     </div>
                     <span className="font-semibold text-lg">RevenuePilot AI</span>
                   </div>
