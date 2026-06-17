@@ -14,6 +14,7 @@ export default function VideoWalkthroughPage() {
       >
         <video
           src="/demo.mp4"
+          poster="/vid-thumbnail.jpg"
           className="w-full h-full object-contain"
           controls
           autoPlay
