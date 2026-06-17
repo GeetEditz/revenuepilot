@@ -30,6 +30,7 @@ import {
   Menu,
   X,
   RefreshCw,
+  Video,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -49,6 +50,7 @@ const menuItems = [
   { label: "Forecast Analysis", href: "/forecast", icon: TrendingUp },
   { label: "Budget Simulator", href: "/simulator", icon: Sliders },
   { label: "AI Insights", href: "/insights", icon: Sparkles },
+  { label: "Video Walkthrough", href: "/video", icon: Video },
   { label: "System Health", href: "/health", icon: Activity },
 ];
 
