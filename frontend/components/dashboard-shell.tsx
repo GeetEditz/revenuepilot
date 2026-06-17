@@ -82,6 +82,14 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
     }
   }, [refetchHealth]);
 
+  if (pathname === "/video") {
+    return (
+      <div className="min-h-screen bg-black text-foreground">
+        {children}
+      </div>
+    );
+  }
+
   return (
     <TooltipProvider delayDuration={100}>
       <div className="min-h-screen flex bg-background text-foreground transition-colors duration-300">
