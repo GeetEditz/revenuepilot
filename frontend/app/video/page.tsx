@@ -17,7 +17,6 @@ export default function VideoWalkthroughPage() {
           poster="/vid-thumbnail.jpg"
           className="w-full h-full object-contain"
           controls
-          autoPlay
           playsInline
         />
       </motion.div>
