@@ -7,7 +7,7 @@ RevenuePilot AI is an enterprise-grade ecommerce revenue forecasting and budget 
 
 ## 🌐 Live Deployments
 
-* **Frontend Dashboard (Vercel)**: [https://revenuepilot.vercel.app](https://revenuepilot.vercel.app) *(Configure/update this link with your Vercel URL)*
+* **Frontend Dashboard (Vercel)**: [https://revenuepilot.geetmore.live/](https://revenuepilot.geetmore.live/)
 * **Backend API Gateway (Render)**: [https://revenuepilot-o2p3.onrender.com](https://revenuepilot-o2p3.onrender.com)
 
 ---
